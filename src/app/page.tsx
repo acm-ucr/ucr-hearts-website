@@ -1,7 +1,13 @@
+import Landing from "@/components/Title";
+import Join from "@/components/home/Join";
+import Reviews from "@/components/home/Reviews";
+
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Hello World
+    <div className="flex w-screen flex-col items-center">
+      <Landing />
+      <Join />
+      <Reviews />
     </div>
   );
 };

@@ -11,7 +11,7 @@
 
 ## Figma
 
-[UCR Hearts Figma Design File](https://www.figma.com/design/1cHysMjmD4gsDNpxdckci2/UCR-HEARTS-JASMINE-TRINH-(own)?node-id=0-1&t=xpygIvPHLzmLtlXD-1)
+[UCR Hearts Figma Design File](<https://www.figma.com/design/1cHysMjmD4gsDNpxdckci2/UCR-HEARTS-JASMINE-TRINH-(own)?node-id=0-1&t=xpygIvPHLzmLtlXD-1>)
 
 ## Node.js
 
