@@ -1,4 +1,4 @@
-import Landing from "@/components/Title";
+import Landing from "@/components/home/Landing";
 import Join from "@/components/home/Join";
 import Reviews from "@/components/home/Reviews";
 
