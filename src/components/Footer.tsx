@@ -4,13 +4,16 @@ import footerLinks from "../data/footerLinks";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
   const [logoClicked, setLogoClicked] = useState(false);
   const [iconClicked, setIconClicked] = useState(-1);
+  const router = useRouter();
 
   const logoClick = () => {
     setLogoClicked(true);
+    router.push("/");
 
     setTimeout(() => {
       setLogoClicked(false);
@@ -34,10 +37,6 @@ const Footer = () => {
       </div>
 
       <div className="flex w-screen items-center justify-center">
-        <Link
-          href="/"
-          className="absolute aspect-square w-[12vw] rounded-full"
-        />
         <Image
           src={logo}
           alt="hearts logo"
