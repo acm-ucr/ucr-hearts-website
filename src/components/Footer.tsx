@@ -32,7 +32,7 @@ const Footer = () => {
     <div className="grid-rows grid h-[20vh] w-screen text-center">
       <div className="absolute left-[2.5vw] h-[3px] w-[95vw] bg-hearts-blue" />
 
-      <div className="my-[2vh] font-hearts text-[4vw] text-hearts-blue">
+      <div className="my-[1.5vh] font-hearts text-[5vw] text-hearts-blue">
         Let's connect!
       </div>
 
@@ -42,8 +42,8 @@ const Footer = () => {
           alt="hearts logo"
           className={
             logoClicked
-              ? "z-10 aspect-square w-[12vw] opacity-[50%] hover:cursor-pointer"
-              : "z-10 aspect-square w-[12vw] hover:cursor-pointer hover:opacity-[80%]"
+              ? "z-10 aspect-square w-[18vw] opacity-[50%] hover:cursor-pointer"
+              : "z-10 aspect-square w-[18vw] hover:cursor-pointer hover:opacity-[80%]"
           }
           onClick={logoClick}
         />
@@ -53,7 +53,7 @@ const Footer = () => {
         your_email@gmail.com
       </div>
 
-      <div className="my-[3vh] flex items-end justify-center">
+      <div className="flex items-end justify-center">
         {footerLinks.map((item, index) => (
           <Link
             href={item.link}
