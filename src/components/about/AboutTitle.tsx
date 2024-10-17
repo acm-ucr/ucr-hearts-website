@@ -16,7 +16,7 @@ const AboutTitle = () => {
           alt="Logo"
           className="mt-[4%] w-1/4 object-contain"
         />
-        <p className="mt-[2%] font-title text-6xl text-hearts-lightBrown">
+        <p className="mt-[2%] font-title text-6xl text-hearts-brown">
           A<span className="underline underline-offset-[16px]">bout U</span>s
         </p>
       </div>

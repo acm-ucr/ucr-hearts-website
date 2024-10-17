@@ -9,7 +9,6 @@ module.exports = {
         brown: "#665045",
         blue: "#6D99AF",
         "light-blue": "#E8F2FB",
-        lightBrown: "#897165",
       },
     },
     fontFamily: {
