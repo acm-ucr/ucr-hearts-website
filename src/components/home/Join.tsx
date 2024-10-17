@@ -27,6 +27,7 @@ const Join = () => {
           <Link
             href="http://google.com"
             className="border-3 my-1 w-fit rounded-2xl border-hearts-blue bg-hearts-blue px-9 py-3 font-hearts text-xl text-hearts-beige drop-shadow-xl hover:opacity-75 active:opacity-100"
+            target="_blank"
           >
             Membership Form
           </Link>
@@ -38,6 +39,7 @@ const Join = () => {
           <Link
             href="http://google.com"
             className="border-3 my-1 w-fit rounded-2xl border-hearts-blue bg-hearts-blue px-9 py-3 font-hearts text-xl text-hearts-beige drop-shadow-xl hover:opacity-75 active:opacity-100"
+            target="_blank"
           >
             Apply for committee here
           </Link>
