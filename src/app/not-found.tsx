@@ -8,9 +8,7 @@ const NotFound = () => {
       <Image
         src={image1}
         alt="404 Background"
-        fill
-        style={{ objectFit: "contain" }}
-        className="pointer-events-none z-10"
+        className="pointer-events-none z-10 h-full w-full object-contain"
       />
 
       <div className="absolute inset-0 flex items-end justify-center">
