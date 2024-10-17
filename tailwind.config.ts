@@ -14,7 +14,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        hearts: "var(--poppins-font)",
+        hearts: "var(--signika-font)",
         title: "var(--cg-font)",
       },
     },
