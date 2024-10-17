@@ -61,8 +61,8 @@ const Footer = () => {
             key={index}
             className={
               iconClicked === index
-                ? "mx-[1vw] flex items-center justify-center text-[6vw] text-hearts-blue opacity-50 hover:scale-75 hover:text-hearts-white hover:transition-colors"
-                : "mx-[1vw] flex items-center justify-center text-[6vw] text-hearts-blue hover:scale-75 hover:text-hearts-white hover:transition-colors"
+                ? "mx-[1vw] flex items-center justify-center text-[6vw] text-hearts-blue opacity-50 hover:scale-75 hover:text-white hover:transition-colors"
+                : "mx-[1vw] flex items-center justify-center text-[6vw] text-hearts-blue hover:scale-75 hover:text-white hover:transition-colors"
             }
             onClick={() => iconClick(index)}
           >
