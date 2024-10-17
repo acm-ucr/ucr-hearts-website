@@ -12,18 +12,13 @@ const Experience = () => {
           Are you a pre-health undergraduate student eager to gain
           <br />
           firsthand experience in the{" "}
-          <text className="text-hearts-brown text-opacity-50">
-            medical
-          </text>{" "}
-          field?
+          <text className="text-hearts-light-brown">medical</text> field?
           <br />
           Join UCR HEARTS, a dynamic club dedicated <br />
           to providing unparalleled opportunities for students
           <br />
           aspiring to enter{" "}
-          <text className="text-hearts-brown text-opacity-50">
-            healthcare
-          </text>{" "}
+          <text className="text-hearts-light-brown">healthcare</text>{" "}
           professions.
           <br />
         </p>
