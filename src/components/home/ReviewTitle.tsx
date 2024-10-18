@@ -3,7 +3,7 @@ import { FaRegStar } from "react-icons/fa";
 const ReviewTitle = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="flex w-[28vw] items-center justify-between text-[2vw] text-hearts-light-brown">
+      <div className="flex w-[35vw] items-center justify-between text-[2.5vw] text-hearts-light-brown">
         <FaRegStar />
         <FaRegStar />
         <p className="whitespace-nowrap font-hearts font-extralight">
@@ -13,7 +13,7 @@ const ReviewTitle = () => {
         <FaRegStar />
       </div>
       <div className="h-[2.5px] w-[12%] rounded-lg bg-hearts-light-brown" />
-      <p className="mb-[5%] mt-[3%] whitespace-nowrap font-hearts text-[1.2vw] font-extralight text-hearts-blue">
+      <p className="mb-[5%] mt-[3%] whitespace-nowrap font-hearts text-[1.5vw] font-extralight text-hearts-blue">
         See what our members have to say about UCR HEARTS!
       </p>
     </div>

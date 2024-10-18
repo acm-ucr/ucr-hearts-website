@@ -13,7 +13,7 @@ const Join = () => {
       />
 
       <div className="absolute flex w-1/3 flex-col items-center">
-        <p className="font-hearts text-[2vw] font-light text-hearts-light-brown">
+        <p className="font-hearts text-[2.5vw] font-light text-hearts-light-brown">
           How to Join
         </p>
         <div className="h-[2.5px] w-1/6 rounded-lg bg-hearts-light-brown"></div>
