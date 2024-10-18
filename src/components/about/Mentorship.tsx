@@ -5,7 +5,7 @@ const Mentorship = () => {
   //return <div className="">Mentorship</div>;
   return (
     <div className="mt-80">
-      <Image src={mentorshipImage} alt="" classname="" />
+      <Image src={mentorshipImage} alt="" className="" />
 
       <div className="ml-40 mt-20 font-hearts text-4xl font-light text-hearts-brown">
         <p>
