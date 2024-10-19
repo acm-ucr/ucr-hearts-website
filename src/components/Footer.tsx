@@ -13,7 +13,7 @@ const Footer = () => {
         <Image
           src={logo}
           alt="hearts logo"
-          className="aspect-square w-[10vw] cursor-pointer duration-300 hover:opacity-[50%] active:opacity-[50%]"
+          className="aspect-square w-[10vw] cursor-pointer duration-300 hover:opacity-[80%] active:opacity-[50%]"
         />
       </Link>
       <p className="my-[3vh] text-[1vw] text-hearts-light-brown">
