@@ -2,11 +2,12 @@ import Button from "@/components/Button";
 
 const Demo = () => {
   return (
-    <div className="flex flex-col bg-hearts-brown p-10">
+    <div className="flex min-h-80 w-2/3 bg-hearts-brown">
       <Button link="\" text="text" />
-      <p className="">
-        about text
-      </p>
+      <Button link="\" text="text" />
+      <Button link="\" text="text" />
+      <Button link="\" text="text" />
+      <Button link="\" text="text" />
     </div>
   );
 };
