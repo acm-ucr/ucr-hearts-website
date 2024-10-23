@@ -13,24 +13,24 @@ const Navigation = () => {
     setNav(!nav);
   };
   return (
-    <div className="sticky top-0 z-30 ml-10 mr-10 flex items-center justify-between border-b-4 border-hearts-blue bg-hearts-beige text-2xl">
+    <div className="sticky top-0 z-30 ml-[3%] mr-[3%] flex items-center justify-between border-b-4 border-hearts-blue bg-hearts-beige text-2xl">
       <Link
         onClick={() => {
           setSelected("");
         }}
         href="/"
-        className="flex items-center justify-between"
+        className="flex items-center"
       >
         <Image
           src={logo}
           alt="Logo"
-          className="left-0 mb-2 w-12 duration-300 hover:opacity-60 md:w-20"
+          className="left-0 mb-[0.5%] w-[5%] duration-300 hover:opacity-60"
         />
-        <p className="ml-4 text-xl font-light text-hearts-blue md:text-5xl">
+        <p className="ml-[0.5%] whitespace-nowrap text-xl font-light text-hearts-blue md:text-5xl">
           UCR Hearts
         </p>
       </Link>
-      <div className="absolute right-0 hidden w-2/5 justify-evenly md:flex">
+      <div className="absolute right-0 hidden w-[40%] justify-evenly md:flex">
         {items.map((item, index) => (
           <Link
             href={item.link}
