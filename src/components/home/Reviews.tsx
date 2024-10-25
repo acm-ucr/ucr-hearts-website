@@ -1,11 +1,5 @@
-import Review from "./Review";
-
 const Reviews = () => {
-  return (
-    <div className="">
-      <Review />
-    </div>
-  );
+  return <div className=""></div>;
 };
 
 export default Reviews;
