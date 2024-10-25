@@ -1,7 +1,13 @@
+import EventCard from "./EventCard";
+import LogoImg from "@/public/logo.webp";
 const EventCards = () => {
   return (
     <div className="">
-      <p>EventCards</p>
+      <EventCard
+        image={LogoImg}
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title="Event"
+      />
     </div>
   );
 };
