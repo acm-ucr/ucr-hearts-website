@@ -25,7 +25,6 @@ const Footer = () => {
             href={item.link}
             target="_blank"
             key={index}
-
             className="flex cursor-pointer items-center justify-center text-[3.5vw] text-hearts-blue duration-300 hover:scale-[95%] hover:opacity-75 active:opacity-50"
           >
             {item.icon}

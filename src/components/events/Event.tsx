@@ -24,7 +24,7 @@ const Event: React.FC<EventProps> = ({ title, time, link }) => {
       </div>
       <a
         href={link}
-        className="text-md ml-8 rounded-full bg-hearts-blue px-6 py-1 font-hearts font-thin text-hearts-white shadow-[-2px_4px_3px_rgba(0,0,0,0.3)]"
+        className="text-md text-hearts-white ml-8 rounded-full bg-hearts-blue px-6 py-1 font-hearts font-thin shadow-[-2px_4px_3px_rgba(0,0,0,0.3)]"
       >
         More info
       </a>
