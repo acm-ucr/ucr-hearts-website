@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-const EventCard = ({ image, text, Title }) => {
+
+interface EventCardProps {
+  image: string; 
+  text: string; 
+  title: string; 
+}
+const EventCard: React.FC<EventCardProps> = ({ image, text, title }) => {
   return (
     <div className="border-3 mx-auto flex h-80 w-64 flex-row items-center justify-center rounded-3xl border-white bg-white shadow-2xl">
       <div className="flex flex-col items-center justify-center">
@@ -12,7 +18,7 @@ const EventCard = ({ image, text, Title }) => {
         />
 
         <div className="mt-2 text-center font-title text-4xl font-light text-hearts-blue">
-          {Title}
+          {title}
         </div>
         <div className="text-center font-hearts text-xs font-extralight text-hearts-brown">
           {text}
