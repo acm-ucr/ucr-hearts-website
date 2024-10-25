@@ -4,37 +4,42 @@ import mentorshipImage from "../../../public/mentorship.webp";
 const Mentorship = () => {
   //return <div className="">Mentorship</div>;
   return (
-    <div className="mt-80">
-      <Image src={mentorshipImage} alt="" className="" />
+    <div className="my-[10%] w-full pl-[15%]">
+      <Image
+        src={mentorshipImage}
+        alt="mentorship"
+        className="mb-[3%] w-[85vw]"
+      />
 
-      <div className="ml-40 mt-20 font-hearts text-4xl font-light text-hearts-brown">
+      <div className="pl-[5%] font-hearts text-[1.8vw] font-light text-hearts-brown">
         <p>
-          Take your pre-health experience to the next level with UCR <br />
-          HEARTS's rotational mentorship committees. Designed to <br />
-          provide targeted guidance and support, our three <br />
-          committees-{""}
-          <text className="text-hearts-light-brown">Research</text>,{" "}
-          <text className="text-hearts-light-brown">Education</text>, and{" "}
-          <text className="text-hearts-light-brown">
+          Take your pre-health experience to the next level with UCR HEARTS's
+          <br />
+          rotational mentorship committees. Designed to provide targeted
+          guidance <br />
+          and support, our three committees-{""}
+          <text className="text-hearts-light-brown opacity-90">
+            Research
+          </text>,{" "}
+          <text className="text-hearts-light-brown opacity-90">Education</text>,
+          and{" "}
+          <text className="text-hearts-light-brown opacity-90">
             Professional <br /> Development
           </text>
-          -offer invaluable opportunities for growth and <br />
-          learning.
+          -offer invaluable opportunities for growth and learning.
         </p>
 
-        <div className="mb-40">
-          <p>
-            <br />
-            Join UCR HEARTS and benefit from the comprehensive
-            <br />
-            mentorship offered by these committees. Gain valuable <br />
-            expereince, knowledge, and skills that will set you apart in <br />
-            your{" "}
-            <text className="text-hearts-light-brown">
-              healthcare journey!
-            </text>{" "}
-          </p>
-        </div>
+        <p>
+          <br />
+          Join UCR HEARTS and benefit from the comprehensive mentorship offered{" "}
+          <br />
+          by these committees. Gain valuable expereince, knowledge, and skills{" "}
+          <br />
+          that will set you apart in your{" "}
+          <text className="text-hearts-light-brown opacity-90">
+            healthcare journey!
+          </text>{" "}
+        </p>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Review from "./Review";
 const Reviews = () => {
   return (
     <div className="">
-      <Review />
+      <Review quote="" name="" />
     </div>
   );
 };

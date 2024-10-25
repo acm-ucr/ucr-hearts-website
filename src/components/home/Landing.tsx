@@ -3,14 +3,14 @@ import image1 from "../../../public/landing.webp";
 
 const Landing = () => {
   return (
-    <div className="relative flex w-full flex-col items-center">
+    <div className="relative mt-[5%] flex w-full flex-col items-center">
       <Image src={image1} alt="Background" className="w-full object-cover" />
-      <div className="absolute top-10 mt-10 flex w-full flex-col items-center">
-        <p className="mb-32 font-hearts text-4xl font-extralight text-hearts-brown">
+      <div className="absolute top-[8%] flex w-full flex-col items-center">
+        <p className="mb-[5%] font-hearts text-[2.5vw] font-extralight text-hearts-light-brown">
           WELCOME TO
         </p>
-        <p className="mb-4 font-title text-9xl text-hearts-blue">UCR Hearts</p>
-        <p className="font-hearts text-4xl font-medium text-hearts-blue">
+        <p className="font-title text-[7.5vw] text-hearts-blue">UCR Hearts</p>
+        <p className="font-hearts text-[2vw] text-hearts-blue">
           Health Exploration and Rotational Training Society
         </p>
       </div>

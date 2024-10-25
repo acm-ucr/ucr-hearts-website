@@ -2,13 +2,13 @@ import "./globals.css";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Poppins, Cormorant_Garamond } from "next/font/google";
+import { Signika, Cormorant_Garamond } from "next/font/google";
 
-const poppins = Poppins({
+const signika = Signika({
   subsets: ["latin"],
   display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--poppins-font",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--signika-font",
 });
 
 const cg = Cormorant_Garamond({
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`min-h-screen bg-hearts-beige ${poppins.variable} ${cg.variable}`}
+        className={`min-h-screen bg-hearts-beige ${signika.variable} ${cg.variable}`}
       >
         <Navigation />
         <ReactQueryClientProvider>
