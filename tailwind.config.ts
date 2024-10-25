@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       colors: {
         hearts: {
-          white: "#FFFFFF",
           beige: "#F8F2EE",
           brown: "#665045",
           blue: "#6D99AF",
