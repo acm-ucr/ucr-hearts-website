@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-
 interface EventCardProps {
-  image: string; 
-  text: string; 
-  title: string; 
+  image: string;
+  text: string;
+  title: string;
 }
 const EventCard: React.FC<EventCardProps> = ({ image, text, title }) => {
   return (
