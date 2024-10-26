@@ -4,12 +4,16 @@ import logo from "@/public/logo.webp";
 
 const Button = ({ link, text }: { link: string; text: string }) => {
   return (
-    <div className="flex h-auto w-1/12 flex-col items-center py-3 duration-300 hover:cursor-pointer hover:opacity-50 active:opacity-30">
-      <Image src={logo} alt="logo" className="aspect-square object-contain" />
+    <div className="w-1/10 bg-hearts-beige flex h-auto flex-col items-center py-3 duration-300 hover:cursor-pointer hover:opacity-50 active:opacity-30">
+      <Image
+        src={logo}
+        alt="logo"
+        className="aspect-square w-1/2 object-contain"
+      />
       <Link
         href={link}
         target="_blank"
-        className="bg-hearts-light-blue px-3 py-2 font-hearts text-[2vw] font-bold text-hearts-blue"
+        className="bg-hearts-light-blue px-3 py-2 font-hearts text-[1vw] font-bold text-hearts-blue"
       >
         {text}
       </Link>
