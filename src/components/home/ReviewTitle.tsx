@@ -13,7 +13,7 @@ const ReviewTitle = () => {
         <FaRegStar />
       </div>
       <div className="h-[2.5px] w-[12%] rounded-lg bg-hearts-light-brown" />
-      <p className="mb-[5%] mt-[3%] whitespace-nowrap font-hearts text-[1.5vw] font-extralight text-hearts-blue">
+      <p className="mb-[5%] mt-[3%] whitespace-nowrap font-hearts text-[1.7vw] font-extralight text-hearts-blue">
         See what our members have to say about UCR HEARTS!
       </p>
     </div>

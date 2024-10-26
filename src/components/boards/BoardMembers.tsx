@@ -3,7 +3,7 @@ import { boardInfo } from "@/data/boardInfo";
 
 const BoardMembers = () => {
   return (
-    <div className="mb-[5vh] grid grid-cols-2 gap-x-[15vw] gap-y-[10vh]">
+    <div className="mb-[5vh] grid grid-cols-2 gap-x-[10vw] gap-y-[10vh]">
       {boardInfo.map((CARD, index) => (
         <div
           key={index}
