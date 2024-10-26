@@ -4,7 +4,7 @@ import logo from "@/public/logo.webp";
 
 const Button = ({ link, text }: { link: string; text: string }) => {
   return (
-    <div className="w-1/10 bg-hearts-beige flex h-auto flex-col items-center py-3 duration-300 hover:cursor-pointer hover:opacity-50 active:opacity-30">
+    <div className="w-1/10 flex h-auto flex-col items-center bg-hearts-beige py-3 duration-300 hover:cursor-pointer hover:opacity-50 active:opacity-30">
       <Image
         src={logo}
         alt="logo"

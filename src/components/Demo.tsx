@@ -1,6 +1,4 @@
 import Button from "@/components/Button";
-import Logo from "@/public/logo.webp";
-import Image from "next/image";
 import demoInfo from "@/data/demoinfo";
 
 const Demo = () => {
