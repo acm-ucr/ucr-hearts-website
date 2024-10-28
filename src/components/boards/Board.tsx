@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { MdMail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const Board = ({
   image,
@@ -13,7 +13,7 @@ const Board = ({
   mail,
   insta,
   desc,
-  excs
+  excs,
 }: {
   image: StaticImageData;
   name: string;
@@ -27,8 +27,14 @@ const Board = ({
 
   return (
     <div className="relative mb-[5%] cursor-pointer">
-      <motion.div className="relative z-10 aspect-[4/5] w-[20vw] rounded-[10%] bg-white" style={{transformStyle: "preserve-3d"}} transition={{duration: 0.7}} animate={{rotateY: flipped ? 180 : 0 }} onClick={() => setFlipped((prevState) => !prevState)}>
-        <div style={{backfaceVisibility: "hidden"}}>
+      <motion.div
+        className="relative z-10 aspect-[4/5] w-[20vw] rounded-[10%] bg-white"
+        style={{ transformStyle: "preserve-3d" }}
+        transition={{ duration: 0.7 }}
+        animate={{ rotateY: flipped ? 180 : 0 }}
+        onClick={() => setFlipped((prevState) => !prevState)}
+      >
+        <div style={{ backfaceVisibility: "hidden" }}>
           <div className="flex flex-col items-center text-center leading-none">
             <Image
               src={image}
@@ -64,11 +70,13 @@ const Board = ({
           </Link>
         </div>
 
-
-        <motion.div  className="absolute inset-0 flex flex-col m-[8%] gap-y-[10%]" initial={{rotateY: 180}} style={{backfaceVisibility: "hidden"}}>
-
+        <motion.div
+          className="absolute inset-0 m-[8%] flex flex-col gap-y-[10%]"
+          initial={{ rotateY: 180 }}
+          style={{ backfaceVisibility: "hidden" }}
+        >
           <div>
-            <p className="text-[1.5vw] text-hearts-light-brown-100 pb-[2%]">
+            <p className="pb-[2%] text-[1.5vw] text-hearts-light-brown-100">
               Why did you found hearts?
             </p>
             <p className="text-[0.9vw] leading-tight text-hearts-brown">
@@ -87,7 +95,6 @@ const Board = ({
               ))}
             </div>
           </div>
-
         </motion.div>
       </motion.div>
 
