@@ -8,7 +8,7 @@ export const demoInfo = [
     link: "/",
   },
   {
-    text: "text 3",
+    text: "text 9000",
     link: "/",
   },
   {
@@ -21,6 +21,14 @@ export const demoInfo = [
   },
   {
     text: "text 6",
+    link: "/",
+  },
+  {
+    text: "text 7",
+    link: "/",
+  },
+  {
+    text: "text 7",
     link: "/",
   },
   {
