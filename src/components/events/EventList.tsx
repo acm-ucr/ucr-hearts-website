@@ -1,13 +1,17 @@
 import Event from "./Event";
+import { eventInfo } from "@/data/eventInfo";
 
 const EventList = () => {
   return (
     <div className="mb-[10%]">
-      <Event title="EVENT NAME" time="8/7/2024 08:00 - 10:00 AM PST" link="/" />
-
-      <Event title="EVENT NAME" time="8/7/2024 08:00 - 10:00 AM PST" link="/" />
-
-      <Event title="EVENT NAME" time="8/7/2024 08:00 - 10:00 AM PST" link="/" />
+      {eventInfo.map((event, index) => (
+        <Event
+          key={index}
+          title={event.title}
+          time={event.time}
+          link={event.link}
+        />
+      ))}
     </div>
   );
 };
