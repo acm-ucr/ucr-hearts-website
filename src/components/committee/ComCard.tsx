@@ -20,7 +20,7 @@ const ComCard: React.FC<ComCardProps> = ({
   return (
     <div className="flex justify-center">
       <div
-        className="my-[3%] max-w-[75%] rounded-[3rem] bg-hearts-white px-[8%] py-[2%] shadow-md"
+        className="bg-hearts-white my-[3%] max-w-[75%] rounded-[3rem] px-[8%] py-[2%] shadow-md"
         style={{
           boxShadow: "-20px 20px 6px rgba(0, 0, 0, 0.3)",
         }}
