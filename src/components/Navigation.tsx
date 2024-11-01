@@ -19,12 +19,12 @@ const Navigation = () => {
           setSelected("");
         }}
         href="/"
-        className="flex items-center"
+        className="flex items-center duration-300 hover:opacity-75"
       >
         <Image
           src={logo}
           alt="Logo"
-          className="left-0 mb-[0.5%] w-[5%] duration-300 hover:opacity-60"
+          className="left-0 my-[0.5%] w-[5%] duration-300 hover:opacity-60"
         />
         <p className="text:2xl ml-[0.5%] whitespace-nowrap text-xl font-light text-hearts-blue md:text-3xl lg:text-5xl">
           UCR Hearts
