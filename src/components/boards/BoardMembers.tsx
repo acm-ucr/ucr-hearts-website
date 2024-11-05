@@ -3,16 +3,9 @@ import { boardInfo } from "@/data/boardInfo";
 
 const BoardMembers = () => {
   return (
-    <div className="mb-[5vh] grid grid-cols-2 gap-x-[10vw] gap-y-[10vh]">
+    <div className="my-[5vh] grid grid-cols-2 gap-x-[10vw] gap-y-[10vh]">
       {boardInfo.map((CARD, index) => (
-        <div
-          key={index}
-          className={
-            index === boardInfo.length - 1
-              ? "col-span-2 flex justify-center"
-              : ""
-          }
-        >
+        <div key={index}>
           <Board
             image={CARD.image}
             name={CARD.name}
