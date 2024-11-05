@@ -26,9 +26,9 @@ const Board = ({
   const [flipped, setFlipped] = useState(false);
 
   return (
-    <div className="relative mb-[5%] cursor-pointer">
+    <div className="relative mb-[5%] cursor-pointer rounded-[3vw] bg-hearts-blue shadow-hearts">
       <motion.div
-        className="relative z-10 aspect-[4/5] w-[20vw] rounded-[10%] bg-white"
+        className="relative z-10 aspect-[4/5] w-[22vw] rounded-[10%] bg-white"
         style={{ transformStyle: "preserve-3d" }}
         transition={{ duration: 0.7 }}
         animate={{ rotateY: flipped ? 180 : 0 }}
@@ -97,8 +97,6 @@ const Board = ({
           </div>
         </motion.div>
       </motion.div>
-
-      <div className="absolute right-[.5vw] top-[.4vw] aspect-[4/5] w-[20.5vw] rounded-[10%] bg-stone-500 opacity-40 blur-sm" />
     </div>
   );
 };

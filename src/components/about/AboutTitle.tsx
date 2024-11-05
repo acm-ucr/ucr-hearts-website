@@ -14,7 +14,7 @@ const AboutTitle = () => {
         <Image
           src={logoImage}
           alt="Logo"
-          className="mt-[4%] w-[23vw] rounded-full border-2 border-hearts-blue object-contain shadow-lg"
+          className="mt-[4%] w-[23vw] rounded-full border-2 border-hearts-blue object-contain shadow-hearts"
         />
         <p className="mt-[1%] font-title text-[3.5vw] font-extralight text-hearts-light-brown">
           About Us

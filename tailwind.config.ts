@@ -17,6 +17,9 @@ module.exports = {
         hearts: "var(--signika-font)",
         title: "var(--cg-font)",
       },
+      boxShadow: {
+        hearts: "-1vw 1vw 0.4vw rgba(0, 0, 0, 0.25)",
+      },
     },
   },
   plugins: [],
