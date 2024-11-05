@@ -13,7 +13,7 @@ const Navigation = () => {
     setNav(!nav);
   };
   return (
-    <div className="sticky top-0 z-30 ml-[3%] mr-[3%] flex items-center justify-between border-b-4 border-hearts-blue bg-hearts-beige text-[1.7vw]">
+    <div className="sticky top-0 z-30 ml-[3%] mr-[3%] flex items-center justify-between border-b-4 border-hearts-blue bg-hearts-beige text-lg md:text-[1.7vw]">
       <Link
         onClick={() => {
           setSelected("");
@@ -24,9 +24,9 @@ const Navigation = () => {
         <Image
           src={logo}
           alt="Logo"
-          className="left-0 my-[0.5%] w-[5%] duration-300 hover:opacity-60"
+          className="left-0 my-[0.5%] w-[7%] duration-300 hover:opacity-60 md:w-[5%]"
         />
-        <p className="ml-[0.5%] whitespace-nowrap font-light text-hearts-blue md:text-[2.5vw]">
+        <p className="ml-[0.5%] whitespace-nowrap text-xl font-light text-hearts-blue md:text-[2.5vw]">
           UCR Hearts
         </p>
       </Link>
@@ -64,7 +64,7 @@ const Navigation = () => {
               setSelected(item.name);
               handleNav();
             }}
-            className={`border-solid duration-300 hover:text-hearts-brown ${
+            className={`border-solid py-2 duration-300 hover:text-hearts-brown md:py-0 ${
               selected === item.name
                 ? "border-b-2 border-hearts-brown text-hearts-brown"
                 : "text-hearts-blue"
