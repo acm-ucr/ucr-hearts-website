@@ -35,7 +35,9 @@ export default function RootLayout({ children }: LayoutProps) {
       >
         <Navigation />
         <ReactQueryClientProvider>
-          <div className="overflow-x-hidden font-hearts">{children}</div>
+          <div className="w-screen overflow-x-hidden font-hearts">
+            {children}
+          </div>
         </ReactQueryClientProvider>
         <Footer />
       </body>
