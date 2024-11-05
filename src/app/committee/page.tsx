@@ -1,5 +1,4 @@
 import Title from "@/components/Title";
-// import ComCard from "@/components/committee/ComCard";
 import ComCards from "@/components/committee/ComCards";
 
 const Committee = () => {
