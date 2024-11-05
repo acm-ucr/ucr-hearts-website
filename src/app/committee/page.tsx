@@ -4,10 +4,10 @@ import ComCards from "@/components/committee/ComCards";
 const Committee = () => {
   return (
     <div className="relative flex w-screen flex-col items-center">
-      <div className ="mb-[0%]">
+      <div className="mb-[0%]">
         <Title title="Committees" />
       </div>
-      <ComCards/>
+      <ComCards />
     </div>
   );
 };
