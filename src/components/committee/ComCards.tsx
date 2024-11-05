@@ -8,6 +8,7 @@ const ComCards = () => {
       {ITEMS.map((item, index) => (
         <div key={index}>
           <ComCard
+            icon={item.icon}
             title={item.title}
             text={item.text}
             item1={item.item1}
