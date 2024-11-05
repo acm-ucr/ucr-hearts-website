@@ -7,7 +7,7 @@ import { IoBookOutline, IoPersonOutline } from "react-icons/io5";
 
 const ComCards = () => {
   return (
-    <div className="relative flex w-full flex-col items-center">
+    <div className="relative mt-[-3%] flex w-full flex-col items-center">
       <Image
         src={backgroundImage}
         alt="Committee Background"
