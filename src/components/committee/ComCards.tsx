@@ -1,20 +1,20 @@
 import React from "react";
-import ComCard from "./ComCard";
-import comCardInfo from "@/data/comCardInfo";
+import ComCard from "@/components/committee/ComCard";
+import { ITEMS } from "@/data/comCardInfo";
 
 const ComCards = () => {
   return (
-    <div className="flex flex-wrap justify-center">
-      {comCardInfo.map((card, index) => (
-        <ComCard
-          key={index}
-          icon={card.icon}
-          title={card.title}
-          text={card.text}
-          item1={card.item1}
-          item2={card.item2}
-          item3={card.item3}
-        />
+    <div className="flex flex-col justify-center">
+      {ITEMS.map((item, index) => (
+        <div key={index}>
+          <ComCard
+            title={item.title}
+            text={item.text}
+            item1={item.item1}
+            item2={item.item2}
+            item3={item.item3}
+          />
+        </div>
       ))}
     </div>
   );
