@@ -5,16 +5,16 @@ module.exports = {
     extend: {
       colors: {
         hearts: {
-          white: "#FFFFFF",
           beige: "#F8F2EE",
           brown: "#665045",
           blue: "#6D99AF",
           "light-blue": "#E8F2FB",
           "light-brown": "#8A7166",
+          "light-brown-100": "#A6958E",
         },
       },
       fontFamily: {
-        hearts: "var(--poppins-font)",
+        hearts: "var(--signika-font)",
         title: "var(--cg-font)",
       },
     },
