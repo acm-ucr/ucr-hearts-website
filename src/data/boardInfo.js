@@ -23,21 +23,6 @@ export const boardInfo = [
     insta: "/",
   },
   {
-    image: Sarah,
-    name: "Sarah Sutjipto",
-    pos: "PRESIDENT",
-    desc: "Hearts is an organization that I am passionate about creating because I want to provide a more inclusive environment for pre-health students to discover their interest in healthcare. I hope to use Hearts as a pathway to help undergraduates have more access to shadowing and learning opportunities.",
-    excs: [
-      "UCR Hearts Co-President",
-      "Calla Lab Neuro Research",
-      "CNAS Peer Academic Leader",
-      "Caravel Health PC Medical Assistant",
-      "Little Einsteins Volunteering",
-    ],
-    mail: "/",
-    insta: "/",
-  },
-  {
     image: Purav,
     name: "Purav Shah",
     pos: "VICE-PRESIDENT",

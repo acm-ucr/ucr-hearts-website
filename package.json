@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.53.3",
+    "framer-motion": "^11.11.10",
     "lucide-react": "^0.417.0",
     "next": "^14.2.15",
     "react": "^18.3.1",
@@ -38,6 +39,7 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.14",
+    "tailwindcss-animated": "^1.1.2",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.0"
   }

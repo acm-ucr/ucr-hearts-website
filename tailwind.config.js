@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import plugin from "tailwindcss-animated";
+
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
@@ -17,7 +19,10 @@ module.exports = {
         hearts: "var(--signika-font)",
         title: "var(--cg-font)",
       },
+      boxShadow: {
+        hearts: "-1vw 1vw 0.4vw rgba(0, 0, 0, 0.25)",
+      },
     },
   },
-  plugins: [],
+  plugins: [plugin],
 };

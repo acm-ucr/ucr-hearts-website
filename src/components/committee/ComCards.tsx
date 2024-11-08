@@ -1,9 +1,24 @@
-const Title = () => {
+import React from "react";
+import ComCard from "@/components/committee/ComCard";
+import { ITEMS } from "@/data/comCardInfo";
+
+const ComCards = () => {
   return (
-    <div className="">
-      <p>Title</p>
+    <div className="flex flex-col justify-center pb-[10%]">
+      {ITEMS.map((item, index) => (
+        <div key={index}>
+          <ComCard
+            icon={item.icon}
+            title={item.title}
+            text={item.text}
+            item1={item.item1}
+            item2={item.item2}
+            item3={item.item3}
+          />
+        </div>
+      ))}
     </div>
   );
 };
 
-export default Title;
+export default ComCards;

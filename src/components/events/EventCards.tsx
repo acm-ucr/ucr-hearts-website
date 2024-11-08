@@ -1,15 +1,21 @@
 import EventCard from "./EventCard";
-import LogoImg from "@/public/logo.webp";
+import { eventCardInfo } from "@/data/eventCardInfo";
+import Image from "next/image";
+import bg from "@/public/eventsCard.webp";
 const EventCards = () => {
   return (
-    <div className="">
-      <EventCard
-        image={LogoImg}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        title="Event"
+    <div className="mb-[10%] flex w-[70%] justify-between">
+      <Image
+        src={bg}
+        alt="background"
+        className="absolute left-0 top-0 -z-10"
       />
+      {eventCardInfo.map((CARD, index) => (
+        <div key={index}>
+          <EventCard image={CARD.image} title={CARD.title} text={CARD.text} />
+        </div>
+      ))}
     </div>
   );
 };
-
 export default EventCards;

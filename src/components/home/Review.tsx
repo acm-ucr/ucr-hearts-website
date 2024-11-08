@@ -3,16 +3,16 @@ import React from "react";
 
 const Review = ({ quote, name }: { quote: string; name: string }) => {
   return (
-    <div className="bg-hearts-white relative flex w-[500px] rounded-3xl py-4 pl-4 pr-2 shadow-lg shadow-gray-700">
-      <RiDoubleQuotesL className="absolute left-0.5 top-4 h-16 w-16 text-hearts-blue" />
-      <div className="flex flex-col justify-start">
-        <p className="pl-12 pt-1 font-hearts text-3xl font-extralight leading-tight text-hearts-light-brown">
-          "{quote}"
-        </p>
-        <p className="pl-5 pt-2 font-hearts text-xl font-extralight text-hearts-blue">
-          - {name}
+    <div className="relative w-[26%] rounded-[2.5vw] bg-white px-[1%] py-[1.5%] shadow-hearts">
+      <div className="flex">
+        <RiDoubleQuotesL className="h-fit text-[18vw] text-hearts-blue" />
+        <p className="m-[1%] font-hearts text-[1.5vw] font-extralight leading-relaxed text-hearts-light-brown">
+          “{quote}”
         </p>
       </div>
+      <p className="mt-[3%] pl-[10%] font-hearts text-[1.2vw] font-extralight text-hearts-blue">
+        - {name}
+      </p>
     </div>
   );
 };

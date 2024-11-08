@@ -4,27 +4,22 @@ import image1 from "@/public/experience.webp";
 
 const Experience = () => {
   return (
-    <div className="my-[10%] w-full pl-[15%]">
-      <Image src={image1} alt="" className="w-[85vw]" />
+    <div className="my-[20%] w-full md:my-[10%] md:pl-[15%]">
+      <Image
+        src={image1}
+        alt=""
+        className="ml-[5%] w-full scale-110 md:w-[85vw]"
+      />
 
-      <div className="mt-[2%] pl-[5%] font-hearts text-[1.8vw] font-light text-hearts-brown">
-        <p>
+      <div className="ml-[10%] mt-[2%] w-4/5 font-hearts text-sm font-light text-hearts-brown md:ml-0 md:w-2/3 md:pl-[5%] md:text-[1.8vw]">
+        <p className="leading-relaxed">
           Are you a pre-health undergraduate student eager to gain firsthand
-          <br />
-          experience in the{" "}
-          <text className="text-hearts-light-brown opacity-90">
-            medical
-          </text>{" "}
-          field? Join UCR HEARTS, a dynamic club
-          <br />
-          dedicated to providing unparalleled opportunities for students
-          <br />
-          aspiring to enter{" "}
-          <text className="text-hearts-light-brown opacity-90">
-            healthcare
-          </text>{" "}
+          experience in the
+          <text className="text-hearts-light-brown opacity-90">medical</text>
+          field? Join UCR HEARTS, a dynamic club dedicated to providing
+          unparalleled opportunities for students aspiring to enter
+          <text className="text-hearts-light-brown opacity-90">healthcare</text>
           professions.
-          <br />
         </p>
       </div>
     </div>
