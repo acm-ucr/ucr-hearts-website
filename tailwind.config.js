@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import plugin from "tailwindcss-animated";
+
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
@@ -11,7 +13,6 @@ module.exports = {
           "light-blue": "#E8F2FB",
           "light-brown": "#8A7166",
           "light-brown-100": "#A6958E",
-          white: "#FFFFFF",
         },
       },
       fontFamily: {
@@ -23,5 +24,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [plugin],
 };
