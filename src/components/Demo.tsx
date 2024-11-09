@@ -1,11 +1,17 @@
+"use client";
+import useView from "./useView";
 import Button from "@/components/Button";
 import Logo from "@/public/logo.webp";
 import Image from "next/image";
 
 const Demo = () => {
+  const [inView, ref] = useView();
   return (
     <div className="w-page flex flex-col items-center py-10">
-      <div className="relative flex min-h-80 w-[50vw] items-center justify-evenly bg-hearts-brown">
+      <div
+        ref={ref}
+        className={`bg-hearts-brown1 relative flex min-h-80 w-[50vw] items-center justify-evenly ${inView && "animate-fade-down animate-duration-[1500ms]"}`}
+      >
         <Button link="\" text="text 1" />
         <Button link="\" text="text 2" />
         <Button link="\" text="text 3" />
