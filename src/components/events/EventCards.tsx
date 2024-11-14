@@ -4,7 +4,7 @@ import Image from "next/image";
 import bg from "@/public/eventsCard.webp";
 const EventCards = () => {
   return (
-    <div className="mb-[10%] flex w-[70%] justify-between md:w-[80vw]">
+    <div className="mb-[10%] flex w-[90%] flex-col items-center sm:space-y-5 md:w-[80vw] md:flex-row md:justify-between">
       <Image
         src={bg}
         alt="background"

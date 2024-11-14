@@ -9,16 +9,16 @@ interface EventCardProps {
 
 const EventCard: React.FC<EventCardProps> = ({ image, text, title }) => {
   return (
-    <div className="mx-auto flex w-[50vw] flex-col items-center rounded-[3vw] bg-white px-[3%] pb-[7%] pt-[0.5%] shadow-2xl md:w-[80%] md:rounded-[2.5vw] md:py-[5%]">
+    <div className="mx-auto flex w-[50vw] flex-col items-center rounded-[3vw] bg-white px-[3%] pb-[7%] pt-[0.5%] shadow-2xl sm:rounded-[2.5vw] sm:py-[10%] md:w-[80%] md:py-[5%]">
       <Image
         src={image}
         alt="InfoPicture"
-        className="aspect-[4/3] object-contain"
+        className="mb-4 aspect-[5/3] object-contain sm:w-[100%]"
       />
-      <p className="md:text-xxl font-title text-[2.7vw] font-extralight text-hearts-blue">
+      <p className="mb-2 font-title text-[4.5vw] font-extralight text-hearts-blue md:text-[2.7vw]">
         {title}
       </p>
-      <p className="w-[90%] text-[0.8vw] font-extralight text-hearts-brown md:text-[1vw]">
+      <p className="w-[90%] text-[0.8vw] font-extralight text-hearts-brown sm:text-[2vw] md:text-[1vw]">
         {text}
       </p>
     </div>
