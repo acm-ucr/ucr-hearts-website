@@ -5,7 +5,7 @@ import { Calendar, EventProps } from "@/components/ui/calendar";
 import { useState } from "react";
 import Image from "next/image";
 
-const CalendarCall = (events: EventProps[]) => {
+const CalendarCall = ({ events }: { events: EventProps[] }) => {
   const [date, setDate] = useState<Date | undefined>(new Date());
 
   return (
