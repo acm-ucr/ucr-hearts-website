@@ -4,22 +4,22 @@ import logoImage from "../../../public/logo.webp";
 
 const AboutTitle = () => {
   return (
-    <div className="relative flex w-full flex-col items-center">
+    <div className="relative m-2 flex w-full flex-col items-center md:m-0">
       <Image
         src={backgroundImage}
         alt="Background"
         className="w-full object-contain"
       />
-      <div className="absolute mt-[10%] flex flex-col items-center">
+      <div className="absolute mt-[15%] flex flex-col items-center md:mt-[10%]">
         <Image
           src={logoImage}
           alt="Logo"
-          className="mt-[4%] w-[23vw] rounded-full border-2 border-hearts-blue object-contain shadow-hearts"
+          className="mt-[6%] w-[45vw] rounded-full border-2 border-hearts-blue object-contain shadow-hearts md:mt-[4%] md:w-[23vw]"
         />
-        <p className="mt-[1%] font-title text-[3.5vw] font-extralight text-hearts-light-brown">
+        <p className="mt-[2%] font-title text-[5vw] font-extralight text-hearts-light-brown md:text-[3.5vw]">
           About Us
         </p>
-        <div className="h-[3px] w-[8%] bg-hearts-light-brown" />
+        <div className="h-[2px] w-[20%] bg-hearts-light-brown md:h-[3px] md:w-[8%]" />
       </div>
     </div>
   );
