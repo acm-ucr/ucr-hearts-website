@@ -1,22 +1,13 @@
 import Photo from "@/components/gallery/Photo";
+import { photosInfo } from "@/data/photosInfo";
 const Photos = () => {
   return (
     <div className="mb-[8%] mt-[2%] flex w-[70%] justify-between">
-      <Photo
-        text="Health Fairs"
-        link="https://github.com/acm-ucr/ucr-hearts-website"
-        image="/boards/Jack.webp"
-      />
-      <Photo
-        text="Workshops"
-        link="https://github.com/acm-ucr/ucr-hearts-website"
-        image="/boards/Jack.webp"
-      />
-      <Photo
-        text="Socials"
-        link="https://github.com/acm-ucr/ucr-hearts-website"
-        image="/boards/Jack.webp"
-      />
+      {photosInfo.map((CARD, index) => (
+        <div key={index}>
+          <Photo text={CARD.text} link={CARD.link} image={CARD.image} />
+        </div>
+      ))}
     </div>
   );
 };
