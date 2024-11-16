@@ -117,7 +117,7 @@ function Calendar({
         nav_button_next: "absolute right-[15vw]",
         table: "w-full space-y-[1vw] bg-white rounded-xl shadow-hearts",
         head_row:
-          "flex bg-hearts-light-blue -mb-1 h-[9vh] rounded-t-xl text-center items-center",
+          "flex bg-hearts-light-blue -mb-1 w-full aspect-[15/1] rounded-t-xl text-center items-center",
         head_cell:
           "rounded-md w-[9.7vw] font-hearts text-[1.2vw] text-hearts-blue",
         row: "flex w-full mt-[0.5vh]",
