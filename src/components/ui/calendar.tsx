@@ -63,7 +63,7 @@ function Calendar({
     return (
       <div className="relative overflow-clip text-[1vw]">
         <div
-          onClick={() => onClick(date)} // Handle click to set selected date
+          onClick={() => onClick(date)}
           className={cn(
             buttonVariants({ variant: "ghost" }),
             "h-[7vw] w-[9.7vw] px-1 py-0 font-hearts text-[1vw] aria-selected:bg-hearts-light-blue aria-selected:text-hearts-blue",
