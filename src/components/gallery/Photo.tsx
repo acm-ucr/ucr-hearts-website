@@ -8,7 +8,7 @@ const Photo: React.FC<{ text: string; link: string; image: string }> = ({
 }) => {
   return (
     <Link href={link} target="_blank">
-      <div className="group relative mb-[3vw] flex items-center justify-center justify-self-center rounded-[3vw] shadow-hearts">
+      <div className="group relative mb-[3vw] flex items-center justify-center justify-self-center rounded-[2vw] shadow-hearts">
         <p className="absolute z-20 text-[2.7vw] font-extralight text-hearts-blue opacity-0 duration-300 group-hover:opacity-100">
           {text}
         </p>
@@ -21,7 +21,7 @@ const Photo: React.FC<{ text: string; link: string; image: string }> = ({
           <Image
             src={image}
             alt="gallery photo"
-            className="absolute z-10 h-full w-full rounded-[10%] object-cover duration-300"
+            className="absolute z-10 h-full w-full rounded-[2vw] object-cover duration-300"
             width={400}
             height={400}
           />
