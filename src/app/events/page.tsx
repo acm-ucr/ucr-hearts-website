@@ -8,9 +8,11 @@ import { EventProps } from "@/components/ui/calendar";
 
 interface GoogleCalendarEvent {
   start: {
-    dateTime: string;
+    dateTime?: string;
+    date?: string;
   };
   summary: string;
+  location?: string;
 }
 
 const Events = () => {
@@ -20,18 +22,36 @@ const Events = () => {
     const fetchEvents = async () => {
       const apiKey = process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY;
       const calendarId = process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL;
-      const maxResults = 10;
-      const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&maxResults=${maxResults}&orderBy=startTime&singleEvents=true`;
+
+      if (!apiKey || !calendarId) {
+        console.error("API Key or Calendar ID is missing.");
+        return;
+      }
+
+      const today = new Date();
+      const timeMin = today.toISOString();
+      const timeMax = new Date(today);
+      timeMax.setMonth(today.getMonth() + 2);
+      const timeMaxISO = timeMax.toISOString();
+
+      const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&orderBy=startTime&singleEvents=true&timeMin=${encodeURIComponent(
+        timeMin,
+      )}&timeMax=${encodeURIComponent(timeMaxISO)}`;
 
       try {
         const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
         const data = await response.json();
 
         const formattedEvents: EventProps[] = data.items.map(
           (event: GoogleCalendarEvent) => ({
-            date: new Date(event.start.dateTime),
-            title: event.summary,
-            startTime: event.start.dateTime,
+            date: new Date(event.start.dateTime || event.start.date || ""),
+            title: event.summary || "No Title",
+            startTime: event.start.dateTime || event.start.date || "",
+            location: event.location || "N/A",
           }),
         );
 
