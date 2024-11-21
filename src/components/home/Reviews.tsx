@@ -201,7 +201,7 @@ const Reviews = () => {
     setLeftInd(newLeftInd);
     setRightInd(newRightInd);
 
-    if (window.innerWidth < 768) {
+    if (isBelow768) {
       rightShiftSmall();
     } else {
       rightShift();
@@ -217,7 +217,7 @@ const Reviews = () => {
     setLeftInd(newLeftInd);
     setRightInd(newRightInd);
 
-    if (window.innerWidth < 768) {
+    if (isBelow768) {
       leftShiftSmall();
     } else {
       leftShift();
@@ -234,13 +234,13 @@ const Reviews = () => {
     setRightInd(newRightInd);
 
     if (prevInd > revIdx) {
-      if (window.innerWidth < 768) {
+      if (isBelow768) {
         rightShiftSmall();
       } else {
         rightShift();
       }
     } else if (revIdx > prevInd) {
-      if (window.innerWidth < 768) {
+      if (isBelow768) {
         leftShiftSmall();
       } else {
         leftShift();
@@ -284,7 +284,7 @@ const Reviews = () => {
         ref={rev3}
         variants={shiftVar}
         initial="initial"
-        whileInView={window.innerWidth < 768 ? "fadeIn" : "rightShift"}
+        whileInView={isBelow768 ? "fadeIn" : "rightShift"}
         className="aspect-[4/3] w-[50vw] cursor-pointer md:w-[25vw]"
       >
         <Review quote={reviews[currInd]?.quote} name={reviews[currInd]?.name} />
