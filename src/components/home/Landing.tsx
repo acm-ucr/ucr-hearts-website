@@ -6,7 +6,7 @@ import image1 from "../../../public/landing.webp";
 const Landing = () => {
   const [inView, ref] = useView();
   return (
-    <div className="relative mt-[3%] flex w-full flex-col items-center">
+    <div className="relative mt-[3%] flex w-full flex-col items-center md:mb-0 mb-[5%]">
       <Image
         src={image1}
         alt="Background"

@@ -5,14 +5,14 @@ import Link from "next/link";
 
 const Join = () => {
   return (
-    <div className="relative flex w-full flex-col items-center">
+    <div className="relative flex w-full flex-col items-center md:mb-0 mb-[20%] md:mt-0 mt-[30%]">
       <Image
         src={backgroundImage}
         alt="Background"
-        className="h-auto w-full object-cover"
+        className="h-auto w-full object-cover scale-125 md:scale-100"
       />
 
-      <div className="absolute mt-[-3%] flex w-1/3 flex-col items-center md:mt-[0%]">
+      <div className="absolute flex w-1/3 flex-col items-center md:top-0 top-[-20%]">
         <p className="font-hearts text-[5vw] font-light text-hearts-light-brown md:text-[2.5vw]">
           How to Join
         </p>
@@ -25,9 +25,8 @@ const Join = () => {
 
         <Link
           href="http://google.com"
-          className="border-3 my-[1%] w-fit cursor-pointer rounded-md border-hearts-blue bg-hearts-blue px-[15%] py-[2.5%] text-center font-hearts text-[3.5vw] font-extralight text-hearts-beige drop-shadow-xl duration-300 hover:opacity-75 active:opacity-50 md:rounded-2xl md:text-[1.5vw]"
+          className="whitespace-nowrap border-3 my-[1%] w-fit cursor-pointer rounded-md border-hearts-blue bg-hearts-blue px-[15%] py-[2.5%] text-center font-hearts text-[3.5vw] font-extralight text-hearts-beige drop-shadow-xl duration-300 hover:opacity-75 active:opacity-50 md:rounded-2xl md:text-[1.5vw]"
           target="_blank"
-          style={{ minWidth: "150px" }}
         >
           Membership Form
         </Link>
@@ -38,9 +37,8 @@ const Join = () => {
 
         <Link
           href="http://google.com"
-          className="border-3 my-1 w-fit cursor-pointer rounded-md border-hearts-blue bg-hearts-blue px-[10%] py-[2.5%] text-center font-hearts text-[3.5vw] font-extralight text-hearts-beige drop-shadow-xl duration-300 hover:opacity-75 active:opacity-100 md:rounded-2xl md:text-[1.5vw]"
+          className="whitespace-nowrap border-3 my-1 w-fit cursor-pointer rounded-md border-hearts-blue bg-hearts-blue px-[10%] py-[2.5%] text-center font-hearts text-[3.5vw] font-extralight text-hearts-beige drop-shadow-xl duration-300 hover:opacity-75 active:opacity-100 md:rounded-2xl md:text-[1.5vw]"
           target="_blank"
-          style={{ minWidth: "200px" }}
         >
           Apply for committee here
         </Link>
