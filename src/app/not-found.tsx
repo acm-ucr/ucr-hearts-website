@@ -8,7 +8,7 @@ const NotFound = () => {
       <Image
         src={image1}
         alt="404 Background"
-        className="w-[90%] object-cover"
+        className="w-full object-cover"
       />
       <Link
         href="/"
