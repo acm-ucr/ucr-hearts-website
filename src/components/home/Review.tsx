@@ -3,7 +3,7 @@ import React from "react";
 
 const Review = ({ quote, name }: { quote: string; name: string }) => {
   return (
-    <div className="relative w-[53vw] rounded-[5vw] bg-white px-[1%] py-[1.7%] shadow-hearts md:w-[26%] md:rounded-[2.5vw] md:py-[1.5%]">
+    <div className="aspect-[4/3] w-full rounded-[5vw] bg-white px-[1%] py-[1.7%] shadow-hearts hover:scale-[105%] md:rounded-[2.5vw] md:py-[1.5%]">
       <div className="flex">
         <RiDoubleQuotesL className="h-fit text-[40vw] text-hearts-blue md:text-[18vw]" />
         <p className="m-[1%] font-hearts text-[3.2vw] font-extralight leading-relaxed text-hearts-light-brown md:text-[1.5vw]">
