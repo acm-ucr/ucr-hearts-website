@@ -30,11 +30,11 @@ const ComCard: React.FC<ComCardProps> = ({
           <h2 className="font-title text-[4.5vw] md:text-[3vw]">{title}</h2>
         </div>
 
-        <p className="mb-2 font-hearts text-[2.8vw] font-thin text-hearts-brown md:mb-[1%] md:text-[1.3vw]">
+        <p className="mb-2 font-hearts text-[2.9vw] font-thin text-hearts-brown md:mb-[1%] md:text-[1.3vw]">
           {text}
         </p>
 
-        <ul className="list-inside list-disc pl-5 font-hearts text-[2.2vw] font-thin text-hearts-brown md:pl-[4%] md:text-[1.3vw]">
+        <ul className="list-inside list-disc pl-5 font-hearts text-[2.7vw] font-thin text-hearts-brown md:pl-[4%] md:text-[1.3vw]">
           <li className="mb-1 md:mb-2">{item1}</li>
           <li className="mb-1 md:mb-2">{item2}</li>
           <li>{item3}</li>
