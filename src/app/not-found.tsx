@@ -12,7 +12,7 @@ const NotFound = () => {
       />
       <Link
         href="/"
-        className="absolute bottom-[20%] md:left-[41%] h-fit w-fit cursor-pointer rounded-full border-[3px] border-hearts-brown bg-hearts-light-brown px-[4%] py-[0.5%] md:font-hearts text-[6vw] md:text-[1.5vw] font-extralight text-white shadow-lg shadow-gray-500 duration-300 hover:opacity-75"
+        className="absolute bottom-[20%] h-fit w-fit cursor-pointer rounded-full border-[3px] border-hearts-brown bg-hearts-light-brown px-[4%] py-[0.5%] text-[6vw] font-extralight text-white shadow-lg shadow-gray-500 duration-300 hover:opacity-75 md:left-[41%] md:font-hearts md:text-[1.5vw]"
       >
         back to home
       </Link>
