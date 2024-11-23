@@ -4,13 +4,13 @@ import logoImage from "../../../public/logo.webp";
 
 const AboutTitle = () => {
   return (
-    <div className="relative flex w-full flex-col items-center md:mt-0 mt-[8%] md:mb-0 mb-[10%]">
+    <div className="relative mb-[10%] mt-[8%] flex w-full flex-col items-center md:mb-0 md:mt-0">
       <Image
         src={backgroundImage}
         alt="Background"
-        className="w-full object-contain scale-125 md:scale-100"
+        className="w-full scale-125 object-contain md:scale-100"
       />
-      <div className="absolute mt-[15%] flex flex-col items-center md:mt-[10%] md:top-0 top-[-20%]">
+      <div className="absolute top-[-20%] mt-[15%] flex flex-col items-center md:top-0 md:mt-[10%]">
         <Image
           src={logoImage}
           alt="Logo"

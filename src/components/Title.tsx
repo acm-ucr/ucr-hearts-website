@@ -1,7 +1,7 @@
 const Title: React.FC<{ title: string }> = ({ title }) => {
   return (
     <div className="mb-[3%] mt-[6%]">
-      <p className="relative mx-auto font-title md:text-[4vw] text-[5vw] font-light text-hearts-light-brown">
+      <p className="relative mx-auto font-title text-[6vw] font-light text-hearts-light-brown md:text-[4vw]">
         {title}
       </p>
       <p className="relative mx-auto -mt-[0.5vw] w-[9vw] border-b-[0.3vw] border-hearts-light-brown"></p>

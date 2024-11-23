@@ -2,11 +2,14 @@ import Photo from "@/components/gallery/Photo";
 import { photosInfo } from "@/data/photosInfo";
 const Photos = () => {
   return (
-    <div className="md: m-0 mb-[8%] mt-[2%] flex w-[70%] flex-col gap-[6vw] md:flex-row md:justify-between md:gap-[5vw]">
+    <div className="mb-[8%] mt-[2%] flex flex-wrap justify-center md:m-0 md:mb-[15%] md:w-[70%] md:flex-row md:justify-between">
       {photosInfo.map((CARD, index) => (
-        <div key={index}>
-          <Photo text={CARD.text} link={CARD.link} image={CARD.image} />
-        </div>
+        <Photo
+          key={index}
+          text={CARD.text}
+          link={CARD.link}
+          image={CARD.image}
+        />
       ))}
     </div>
   );
