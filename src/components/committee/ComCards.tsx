@@ -4,7 +4,7 @@ import { ITEMS } from "@/data/comCardInfo";
 
 const ComCards = () => {
   return (
-    <div className="flex flex-col justify-center space-y-4 pb-6 md:space-y-0 md:pb-[10%]">
+    <div className="flex flex-col justify-center pb-[10%]">
       {ITEMS.map((item, index) => (
         <div key={index}>
           <ComCard
