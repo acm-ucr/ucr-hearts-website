@@ -3,11 +3,11 @@ import { eventInfo } from "@/data/eventInfo";
 
 const EventList = () => {
   return (
-    <div className="mb-[10%]">
-      <h2 className="font-title text-[8vw] text-hearts-light-brown md:text-[4.5vw]">
+    <div className="mb-[25%] md:mb-[10%]">
+      <h2 className="font-title text-[6vw] font-light text-hearts-light-brown md:text-[4vw]">
         Upcoming Events
       </h2>
-      <div className="ml-[20%] h-[3px] w-[30%] bg-hearts-light-brown md:ml-[13%] md:w-[22%]" />
+      <div className="mb-[2%] ml-[13%] h-[1px] w-[30%] bg-hearts-light-brown md:h-[3px] md:w-[22%]" />
       {eventInfo.map((event, index) => (
         <Event
           key={index}

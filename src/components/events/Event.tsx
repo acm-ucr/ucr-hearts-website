@@ -27,7 +27,7 @@ const Event: React.FC<EventProps> = ({ title, time, link }) => {
         </div>
         <Link
           href={link}
-          className="mt-[6%] text-nowrap rounded-full bg-hearts-blue px-[4%] py-[0.3%] font-hearts text-[3.5vw] font-extralight text-white duration-300 hover:opacity-75 md:mt-[0%] md:text-[1.3vw]"
+          className="mt-[6%] text-nowrap rounded-full bg-hearts-blue px-[4%] py-[0.3%] font-hearts text-[2.5vw] font-extralight text-white duration-300 hover:opacity-75 md:mt-[0%] md:text-[1.3vw]"
         >
           More info
         </Link>
