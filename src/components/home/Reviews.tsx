@@ -249,7 +249,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className="relative mb-[15%] mt-[1%] flex aspect-[4/1] w-screen flex-row items-center justify-center md:justify-evenly">
+    <div className="relative mb-[15%] mt-[1%] flex aspect-[4/1] flex-row items-center justify-center md:w-[90%] md:justify-evenly">
       <motion.div
         ref={rev1}
         variants={shiftVar}

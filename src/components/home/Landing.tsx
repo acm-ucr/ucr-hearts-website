@@ -6,11 +6,11 @@ import image1 from "../../../public/landing.webp";
 const Landing = () => {
   const [inView, ref] = useView();
   return (
-    <div className="relative mt-[3%] flex w-full flex-col items-center">
+    <div className="relative mb-[5%] mt-[3%] flex w-full flex-col items-center md:mb-0">
       <Image
         src={image1}
         alt="Background"
-        className={`scale-125 object-cover pt-[10%] md:w-full md:scale-100 md:pt-0 ${inView && "animate-fade-up"}`}
+        className={`scale-150 object-cover pt-[10%] md:w-full md:scale-100 md:pt-0 ${inView && "animate-fade-up"}`}
       />
       <div
         ref={ref}
