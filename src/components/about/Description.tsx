@@ -18,7 +18,7 @@ const Description = () => {
         alt="star"
         className="absolute bottom-[-50%] right-[20%] w-[3.5vw]"
       />
-      <p className="mt-[2%] w-[60%] font-hearts text-[3vw] font-light text-hearts-brown lg:text-[1.8vw]">
+      <p className="mt-[2%] w-[60%] font-hearts text-[3.5vw] font-light text-hearts-brown md:text-[3vw] lg:text-[1.8vw]">
         UCR HEARTS is the perfect platform to build your resume, network with
         professionals, and make a difference in your community. Don't miss out
         on this chance to jumpstart your healthcare career!
