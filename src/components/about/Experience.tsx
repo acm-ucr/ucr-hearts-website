@@ -15,10 +15,10 @@ const Experience = () => {
         <p className="leading-relaxed">
           Are you a pre-health undergraduate student eager to gain firsthand
           experience in the
-          <text className="text-hearts-light-brown opacity-90">medical</text>
+          <a className="text-hearts-light-brown opacity-90"> medical </a>
           field? Join UCR HEARTS, a dynamic club dedicated to providing
           unparalleled opportunities for students aspiring to enter
-          <text className="text-hearts-light-brown opacity-90">healthcare</text>
+          <a className="text-hearts-light-brown opacity-90"> healthcare </a>
           professions.
         </p>
       </div>
