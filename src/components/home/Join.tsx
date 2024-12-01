@@ -35,7 +35,7 @@ const Join = () => {
 
         <Link
           href="http://google.com"
-          className={`min-w-36 border-3 my-[1%] w-fit cursor-pointer rounded-md border-hearts-blue bg-hearts-blue px-[15%] py-[2.5%] text-center font-hearts text-[3.5vw] font-extralight text-hearts-beige drop-shadow-xl duration-300 hover:opacity-75 active:opacity-50 md:rounded-2xl md:text-[1.5vw] ${inView && "animate-fade-right animate-delay-300"}`}
+          className={`border-3 my-[1%] w-fit min-w-36 cursor-pointer rounded-md border-hearts-blue bg-hearts-blue px-[15%] py-[2.5%] text-center font-hearts text-[3.5vw] font-extralight text-hearts-beige drop-shadow-xl duration-300 hover:opacity-75 active:opacity-50 md:rounded-2xl md:text-[1.5vw] ${inView && "animate-fade-right animate-delay-300"}`}
           target="_blank"
         >
           Membership Form
@@ -49,7 +49,7 @@ const Join = () => {
 
         <Link
           href="http://google.com"
-          className={`min-w-48 border-3 my-1 w-fit cursor-pointer rounded-md border-hearts-blue bg-hearts-blue px-[10%] py-[2.5%] text-center font-hearts text-[3.5vw] font-extralight text-hearts-beige drop-shadow-xl duration-300 hover:opacity-75 active:opacity-100 md:rounded-2xl md:text-[1.5vw] ${inView && "animate-fade-left animate-delay-500"}`}
+          className={`border-3 my-1 w-fit min-w-48 cursor-pointer rounded-md border-hearts-blue bg-hearts-blue px-[10%] py-[2.5%] text-center font-hearts text-[3.5vw] font-extralight text-hearts-beige drop-shadow-xl duration-300 hover:opacity-75 active:opacity-100 md:rounded-2xl md:text-[1.5vw] ${inView && "animate-fade-left animate-delay-500"}`}
           target="_blank"
         >
           Apply for committee here
