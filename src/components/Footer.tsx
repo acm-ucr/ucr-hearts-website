@@ -6,14 +6,14 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="flex h-[20vh] w-screen flex-col items-center text-center">
-      <p className="w-[95vw] border-t-4 border-hearts-blue py-[1.5%] font-hearts text-[3vw] font-extralight text-hearts-blue">
+      <p className="w-[95vw] border-t-4 border-hearts-blue py-[1.5%] font-hearts text-[4vw] font-extralight text-hearts-blue md:text-[3vw]">
         Let's connect!
       </p>
       <Link href="/">
         <Image
           src={logo}
           alt="hearts logo"
-          className="aspect-square w-[10vw] cursor-pointer duration-300 hover:opacity-[80%] active:opacity-[50%]"
+          className="aspect-square w-[12vw] cursor-pointer duration-300 hover:opacity-[80%] active:opacity-[50%] md:w-[10vw]"
         />
       </Link>
       <p className="my-[3vh] text-[1vw] text-hearts-light-brown">
