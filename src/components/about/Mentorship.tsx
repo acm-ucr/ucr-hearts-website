@@ -11,7 +11,7 @@ const Mentorship = () => {
         className="mb-[3%] w-[85vw]"
       />
 
-      <div className="l-[5%] items-center font-hearts text-[3.5vw] font-light text-hearts-brown md:text-[2.5vw] lg:text-[1.8vw]">
+      <div className="l-[5%] w-4/5 items-center font-hearts text-[3.5vw] font-light text-hearts-brown md:text-[2.5vw] lg:text-[1.8vw]">
         <p>
           Take your pre-health experience to the next level with UCR HEARTS's
           <br />
