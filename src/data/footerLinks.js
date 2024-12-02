@@ -6,17 +6,17 @@ export const links = [
   {
     text: "mail",
     icon: <MdMail />,
-    link: "https://duckduckgo.com/",
+    link: "mailto:ucrhearts@gmail.com",
   },
   {
     text: "instagram",
     icon: <FaInstagram />,
-    link: "https://duckduckgo.com/",
+    link: "https://www.instagram.com/ucrhearts/",
   },
   {
     text: "link",
     icon: <GoLink />,
-    link: "https://duckduckgo.com/",
+    link: "https://highlanderlink.ucr.edu/organization/ucrhearts",
   },
 ];
 
