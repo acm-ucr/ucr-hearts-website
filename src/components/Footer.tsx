@@ -18,7 +18,7 @@ const Footer = () => {
           />
         </Link>
         <p className="my-[1.5vh] text-[3vw] text-hearts-light-brown md:my-[3vh] lg:text-[1.5vw]">
-          your_email@gmail.com
+          ucrhearts@gmail.com
         </p>
       </div>
       <div className="flex w-[15%] flex-row justify-center pb-2 md:justify-between">
