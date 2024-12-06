@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import ComCard from "@/components/committee/ComCard";
 import { ITEMS } from "@/data/comCardInfo";
 
