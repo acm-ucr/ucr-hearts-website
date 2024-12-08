@@ -4,7 +4,7 @@ import mentorshipImage from "../../../public/mentorship.webp";
 const Mentorship = () => {
   //return <div className="">Mentorship</div>;
   return (
-    <div className="my-[10%] w-full pl-[15%]">
+    <div className="my-[10%] w-full pb-10 pl-[15%]">
       <Image
         src={mentorshipImage}
         alt="mentorship"
