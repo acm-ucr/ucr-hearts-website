@@ -14,7 +14,7 @@ const Event: React.FC<EventProps> = ({ title, time, link }) => {
     <motion.div
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: false, amount: 0.5 }}
       transition={{ duration: 0.5 }}
       className="mb-6 flex w-[80vw] md:w-[65vw]"
     >
