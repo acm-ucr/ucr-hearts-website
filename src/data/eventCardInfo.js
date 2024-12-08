@@ -4,17 +4,17 @@ export const eventCardInfo = [
   {
     image: fillerImg,
     title: "Workshops",
-    text: "Lorem ipsum dolor sit amet consectetur. Vitae aliquam eu sapien condimentum quam non. Cras purus sollicitudin pulvinar nisi montes. Quis porttitor bibendum turpis odio gravida aliquam. Egestas lectus semper commodo euismod commodo auctor urna.",
+    text: "Our workshops offer a diverse range of hands-on learning experiences designed to enhance your skills and knowledge in various medical fields. Members can practice essential clinical techniques in our suturing and tourniquet workshops and engage in interviews with physicians to gain insights into their specialties and professional journeys. OSCE simulations and case studies provide a realistic environment for refining clinical reasoning and communication skills. These workshops are invaluable for developing practical skills and deepening our members’ understanding of patient care and medical procedures.",
   },
   {
     image: fillerImg,
-    title: "Guest Speakers",
-    text: "Lorem ipsum dolor sit amet consectetur. Vitae aliquam eu sapien condimentum quam non. Cras purus sollicitudin pulvinar nisi montes. Quis porttitor bibendum turpis odio gravida aliquam. Egestas lectus semper commodo euismod commodo auctor urna.",
+    title: "Socials",
+    text: "Our social events are all about building strong connections within our community. These gatherings are an excellent opportunity to meet fellow members, exchange resources, and support mutual growth. Through fun activities and engaging conversations, our socials foster a sense of camaraderie, encouraging collaboration and friendship. Whether you’re seeking advice, sharing experiences, or simply looking to unwind, our socials provide a welcoming environment where everyone can thrive together!",
   },
   {
     image: fillerImg,
     title: "Health Fairs",
-    text: "Lorem ipsum dolor sit amet consectetur. Vitae aliquam eu sapien condimentum quam non. Cras purus sollicitudin pulvinar nisi montes. Quis porttitor bibendum turpis odio gravida aliquam. Egestas lectus semper commodo euismod commodo auctor urna.",
+    text: "Health fairs are community events that bring together healthcare providers, organizations, and the public to promote health awareness and education. At these fairs, various health screenings, educational materials, and resources are available to attendees. For members, volunteering at health fairs provides a unique opportunity to engage with the community, gain practical experience in a healthcare setting, and contribute to public health initiatives. These events allow students to network with professionals and learn about different health topics, enhancing their understanding and interest in the healthcare field.",
   },
 ];
 
