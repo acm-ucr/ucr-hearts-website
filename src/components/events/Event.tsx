@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import star from "../../../public/star.webp";
@@ -10,7 +11,13 @@ interface EventProps {
 
 const Event: React.FC<EventProps> = ({ title, time, link }) => {
   return (
-    <div className="flex w-[80vw] md:w-[65vw]">
+    <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false, amount: 0.5 }}
+      transition={{ duration: 0.5 }}
+      className="mb-6 flex w-[80vw] md:w-[65vw]"
+    >
       <Image
         src={star}
         alt="star icon"
@@ -32,7 +39,7 @@ const Event: React.FC<EventProps> = ({ title, time, link }) => {
           More info
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
