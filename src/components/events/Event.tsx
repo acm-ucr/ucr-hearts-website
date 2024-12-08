@@ -1,14 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
 import star from "../../../public/star.webp";
 
 interface EventProps {
   title: string;
   time: string;
-  link: string;
+  date: Date;
+  location: string;
 }
 
-const Event: React.FC<EventProps> = ({ title, time, link }) => {
+const Event: React.FC<EventProps> = ({ title, date, time, location }) => {
   return (
     <div className="flex w-[80vw] md:w-[65vw]">
       <Image
@@ -22,15 +22,19 @@ const Event: React.FC<EventProps> = ({ title, time, link }) => {
             {title}
           </p>
           <p className="text-nowrap pl-[10%] text-[3.5vw] font-thin text-hearts-light-brown-100 opacity-90 md:text-[1.8vw]">
-            {time}
+            {date.toLocaleDateString(undefined, {
+              weekday: "long",
+              month: "long",
+              day: "numeric",
+            })}
+            {", "}
+            {new Date(time).toLocaleTimeString([], {
+              hour: "2-digit",
+              minute: "2-digit",
+            })}
+            {" at"} {location}
           </p>
         </div>
-        <Link
-          href={link}
-          className="mt-[6%] text-nowrap rounded-full bg-hearts-blue px-[4%] py-[0.3%] font-hearts text-[2.5vw] font-extralight text-white duration-300 hover:opacity-75 md:mt-[0%] md:text-[1.3vw]"
-        >
-          More info
-        </Link>
       </div>
     </div>
   );
