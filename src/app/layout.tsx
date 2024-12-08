@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`min-h-screen bg-hearts-beige ${signika.variable} ${cg.variable}`}
+        className={`min-h-screen w-screen overflow-x-hidden bg-hearts-beige ${signika.variable} ${cg.variable}`}
       >
         <Navigation />
         <ReactQueryClientProvider>
