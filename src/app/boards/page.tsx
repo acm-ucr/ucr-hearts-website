@@ -4,7 +4,7 @@ import board from "@/public/board.webp";
 import BoardMembers from "@/components/boards/BoardMembers";
 const Boards = () => {
   return (
-    <div className="relative flex w-screen flex-col items-center overflow-hidden pb-[10%]">
+    <div className="relative flex w-screen flex-col items-center overflow-hidden pb-[30vh]">
       <Title title="Meet the Board"></Title>
       <Image
         src={board}

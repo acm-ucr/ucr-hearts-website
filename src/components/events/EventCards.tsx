@@ -9,7 +9,7 @@ const EventCards = () => {
   return (
     <div
       ref={ref}
-      className="mb-[20%] mt-[5%] flex w-[90%] justify-between md:mb-[10%] md:mt-0 md:w-[70%]"
+      className="mb-[20%] mt-[5%] flex w-[90%] justify-between md:mb-[10%] md:mt-0 md:w-[85%]"
     >
       <Image
         src={bg}
