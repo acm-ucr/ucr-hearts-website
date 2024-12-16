@@ -5,7 +5,7 @@ import bg from "@/public/committee.webp";
 
 const Committee = () => {
   return (
-    <div className="relative flex w-screen flex-col items-center overflow-hidden">
+    <div className="relative flex w-screen flex-col items-center overflow-hidden pb-[20vh]">
       <Image
         src={bg}
         alt="bg"

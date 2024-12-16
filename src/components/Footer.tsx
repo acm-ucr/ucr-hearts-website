@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="flex h-[20vh] w-full flex-col items-center justify-center text-center">
-      <div className="flex w-full flex-col items-center">
-        <p className="w-[95%] border-t-4 border-hearts-blue py-[1%] font-hearts text-[6vw] font-extralight text-hearts-blue md:py-[1.5%] md:text-[5vw] lg:text-[4vw]">
+    <div className="z-10 flex h-[20vh] w-full flex-col items-center justify-center bg-hearts-beige text-center">
+      <div className="z-10 flex w-full flex-col items-center bg-hearts-beige">
+        <p className="z-10 w-[95%] border-t-4 border-hearts-blue bg-hearts-beige py-[1%] font-hearts text-[6vw] font-extralight text-hearts-blue md:py-[1.5%] md:text-[4vw] lg:text-[4vw]">
           Let's connect!
         </p>
         <Link href="/">
