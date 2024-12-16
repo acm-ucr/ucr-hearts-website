@@ -1,15 +1,23 @@
+"use client";
+import useView from "../useView";
 import Photo from "@/components/gallery/Photo";
 import { photosInfo } from "@/data/photosInfo";
 const Photos = () => {
+  const [inView, ref] = useView();
   return (
-    <div className="mb-[8%] mt-[2%] flex flex-wrap justify-center md:m-0 md:mb-[15%] md:w-[70%] md:flex-row md:justify-between">
+    <div
+      ref={ref}
+      className="mb-[8%] mt-[2%] flex flex-wrap justify-center md:m-0 md:mb-[15%] md:w-[70%] md:flex-row md:justify-between"
+    >
       {photosInfo.map((CARD, index) => (
-        <Photo
-          key={index}
-          text={CARD.text}
-          link={CARD.link}
-          image={CARD.image}
-        />
+        <div className={`${inView && CARD.animation}`}>
+          <Photo
+            key={index}
+            text={CARD.text}
+            link={CARD.link}
+            image={CARD.image}
+          />
+        </div>
       ))}
     </div>
   );

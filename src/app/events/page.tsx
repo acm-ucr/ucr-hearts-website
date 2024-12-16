@@ -17,7 +17,6 @@ interface GoogleCalendarEvent {
 
 const Events = () => {
   const [events, setEvents] = useState<EventProps[]>([]);
-
   useEffect(() => {
     const fetchEvents = async () => {
       const apiKey = process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY;
@@ -68,7 +67,7 @@ const Events = () => {
     <div className="flex w-screen flex-col items-center">
       <Title title="Events" />
       <EventCards />
-      <EventList />
+      <EventList events={events} />
       <Calendar events={events} />
     </div>
   );

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MdMail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
+import useView from "../useView";
 
 const Board = ({
   image,
@@ -24,10 +25,13 @@ const Board = ({
   insta: string;
 }) => {
   const [flipped, setFlipped] = useState(false);
-
+  const [inView, ref] = useView();
   return (
-    <div className="relative mb-[5%] cursor-pointer rounded-[3vw] bg-hearts-blue shadow-hearts">
+    <div
+      className={`relative mb-[5%] cursor-pointer rounded-[3vw] bg-hearts-blue shadow-hearts ${inView && "animate-fade-right animate-duration-[600ms]"}`}
+    >
       <motion.div
+        ref={ref}
         className="relative z-10 aspect-[4/5] w-[35vw] rounded-[3vw] bg-white md:w-[22vw]"
         style={{ transformStyle: "preserve-3d" }}
         transition={{ duration: 0.7 }}
