@@ -5,7 +5,7 @@ import Description from "@/components/about/Description";
 import Mentorship from "@/components/about/Mentorship";
 const About = () => {
   return (
-    <div className="flex w-screen flex-col items-center">
+    <div className="flex w-screen flex-col items-center pb-[20vh]">
       <AboutTitle />
       <Experience />
       <ToDos />
