@@ -71,7 +71,7 @@ function Calendar({
           onClick={() => onClick(date)}
           className={cn(
             buttonVariants({ variant: "ghost" }),
-            "h-[7vw] w-[9.7vw] px-1 py-0 font-hearts text-[1vw] aria-selected:bg-hearts-light-blue aria-selected:text-hearts-blue",
+            "h-[10vw] w-[9.7vw] px-1 py-0 font-hearts text-[2vw] aria-selected:bg-hearts-light-blue aria-selected:text-hearts-blue md:h-[7vw] md:text-[1vw]",
             selected
               ? "bg-hearts-light-blue text-hearts-blue hover:bg-hearts-light-blue hover:text-hearts-blue"
               : "",
