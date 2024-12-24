@@ -1,9 +1,9 @@
-import Sarah from "@/public/boards/Sarah.jpg";
+import Sarah from "@/public/boards/Sarah.webp";
 import Purav from "@/public/boards/Purav.webp";
 import Jack from "@/public/boards/Jack.webp";
 import Justin from "@/public/boards/Justin.webp";
 import Sarahc from "@/public/boards/Sarahc.webp";
-import Ariel from "@/public/boards/Ariel.png";
+import Ariel from "@/public/boards/Ariel.webp";
 
 export const boardInfo = [
   //filler for president
