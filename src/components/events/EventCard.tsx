@@ -25,7 +25,7 @@ const EventCard: React.FC<EventCardProps> = ({
       <Image
         src={image}
         alt="InfoPicture"
-        className="aspect-[4/3] rounded-[4vw] object-contain md:rounded-[3vw]"
+        className="aspect-[4/3] rounded-[4vw] object-cover md:rounded-[3vw]"
       />
       <p className="text-nowrap font-title text-[4.3vw] font-extralight text-hearts-blue md:text-[2.7vw]">
         {title}

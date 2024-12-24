@@ -43,7 +43,7 @@ const Board = ({
             <Image
               src={image}
               alt="image of member"
-              className="mt-[5%] aspect-[33/23] w-[90%] rounded-[3vw]"
+              className="mt-[5%] aspect-[33/23] w-[90%] rounded-[3vw] object-cover"
             />
 
             <p className="mt-[2%] font-title text-[4.5vw] text-hearts-blue md:text-[2.5vw]">
