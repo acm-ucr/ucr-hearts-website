@@ -9,8 +9,12 @@ const CalendarCall = ({ events }: { events: EventProps[] }) => {
   const [date, setDate] = useState<Date | undefined>(new Date());
 
   return (
-    <div className="relative w-screen overflow-clip">
-      <Image src={bg} alt="background" className="absolute -z-10 w-screen" />
+    <div className="relative h-[100vw] w-[100vw] overflow-clip md:h-[75vw]">
+      <Image
+        src={bg}
+        alt="background"
+        className="absolute top-[10vw] -z-10 w-screen md:top-0"
+      />
 
       <Calendar
         mode="single"
