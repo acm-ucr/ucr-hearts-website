@@ -1,14 +1,19 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "@/public/logo.webp";
 import { items } from "@/data/navigation";
 import { IoMdMenu } from "react-icons/io";
 
 const Navigation = () => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState(
+    localStorage.getItem("selected") === ""
+      ? ""
+      : localStorage.getItem("selected"),
+  );
   const [nav, setNav] = useState(false);
+  console.log(selected);
   const handleNav = () => {
     setNav(!nav);
   };
@@ -16,6 +21,7 @@ const Navigation = () => {
     <div className="sticky top-0 z-30 ml-[3%] mr-[3%] flex items-center justify-between border-b-4 border-hearts-blue bg-hearts-beige text-lg md:text-[1.7vw]">
       <Link
         onClick={() => {
+          localStorage.setItem("selected", "");
           setSelected("");
         }}
         href="/"
@@ -37,6 +43,7 @@ const Navigation = () => {
             key={index}
             onClick={() => {
               setSelected(item.name);
+              localStorage.setItem("selected", item.name);
             }}
             className={`border-solid duration-300 hover:text-hearts-brown ${
               selected === item.name
@@ -61,7 +68,7 @@ const Navigation = () => {
             href={item.link}
             key={index}
             onClick={() => {
-              setSelected(item.name);
+              localStorage.setItem("selected", item.name);
               handleNav();
             }}
             className={`border-solid py-2 duration-300 hover:text-hearts-brown md:py-0 ${
